@@ -1,0 +1,13 @@
+{
+  "name": "kapelusze",
+  "displayName": "Kapelusze",
+  "version": "0.1.0",
+  "description": "Analiza problemu, pomysłu albo sporu metodą sześciu kapeluszy: osobni agenci zakładają kolejne kapelusze (fakty, korzyści, ryzyka, nowe pomysły, emocje), moderator pyta Cię o zdanie przed rekomendacją i kończy mapą, następnymi krokami oraz najtańszym testem.",
+  "author": {
+    "name": "Tomasz Szwecki",
+    "url": "https://sztukamarketingu.pl"
+  },
+  "homepage": "https://sztukamarketingu.pl",
+  "license": "MIT",
+  "keywords": ["sześć kapeluszy", "decyzje", "analiza", "spór", "agenci", "moderator", "polski"]
+}

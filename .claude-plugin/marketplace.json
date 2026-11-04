@@ -1,0 +1,17 @@
+{
+  "name": "kapelusze",
+  "owner": {
+    "name": "Tomasz Szwecki",
+    "url": "https://sztukamarketingu.pl"
+  },
+  "description": "Darmowa analiza decyzji metodą sześciu kapeluszy od Sztuki Marketingu",
+  "plugins": [
+    {
+      "name": "kapelusze",
+      "displayName": "Kapelusze",
+      "source": "./",
+      "description": "Osobni agenci zakładają kolejne kapelusze, moderator pyta Cię o zdanie i kończy rekomendacją z następnymi krokami.",
+      "version": "0.1.0"
+    }
+  ]
+}
