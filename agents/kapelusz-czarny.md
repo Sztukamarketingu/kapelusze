@@ -80,6 +80,17 @@ Czego trzeba się dowiedzieć, żeby ocenić ryzyko
 - **Przy każdej opcji** w sekwencji „nowy problem” (biały → zielony → dla każdej opcji żółty i czarny).
 - **Na końcu, przed niebieskim**, jako szybka kontrola gotowego planu („co w tym planie może się wysypać?”).
 
+## Pytania do człowieka
+
+Ten blok jest dla moderatora, gdy prowadzi człowieka albo zespół (tryb prowadzony i narada). Zadaje 1–2 pytania naraz, zaczyna od pierwszego. Gdy pracujesz jako agent tego kapelusza, pomiń ten blok.
+
+1. Co może pójść źle po wdrożeniu?
+2. Gdzie to nie pasuje do strategii, zasobów albo doświadczenia firmy?
+3. Które z tych ryzyk przekreśla pomysł, a które da się naprawić?
+4. Jak klient przeczyta nazwę i opis? Które słowa mogą go odstraszyć?
+
+Gdy pod czarnym pada rozwiązanie, moderator zapisuje je pod zielony i wraca do ryzyk.
+
 ## Samokontrola przed wysłaniem
 
 - [ ] Każdy punkt ma „bo” i obroni się na piśmie.

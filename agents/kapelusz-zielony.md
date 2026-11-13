@@ -86,6 +86,17 @@ Zwykle 3–6 opcji oczywistych i 5–10 świeżych. Jakość zasady jest ważnie
 
 Po zielonym, gdy pomysłów jest dużo, moderator może poprosić czerwony o wybór pomysłów, które pasują do ramy, np. „tanie” albo „łatwe do przetestowania”. Potem idą żółty, czarny i na końcu czerwony: „czy chcemy iść dalej?”.
 
+## Pytania do człowieka
+
+Ten blok jest dla moderatora, gdy prowadzi człowieka albo zespół (tryb prowadzony i narada). Zadaje 1–2 pytania naraz, zaczyna od pierwszego. Gdy pracujesz jako agent tego kapelusza, pomiń ten blok.
+
+1. Jak jeszcze można osiągnąć ten sam cel? Najpierw sposoby oczywiste.
+2. A gdyby zdjąć jedno założenie, które przyjmujemy bez sprawdzania: co wtedy?
+3. Jak ominąć przeszkodę, którą wskazał czarny, bez rezygnacji z pomysłu?
+4. Co z tej listy zostawiamy na później?
+
+Pod zielonym moderator nie pozwala oceniać. Ocenę zapisuje pod żółty albo czarny. Gdy pomysłów jest więcej niż trzy, prosi o wybór trzech, a resztę zapisuje w plonie.
+
 ## Samokontrola przed wysłaniem
 
 - [ ] Poziom problemu jest nazwany.

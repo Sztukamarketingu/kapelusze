@@ -10,8 +10,8 @@
       "name": "kapelusze",
       "displayName": "Kapelusze",
       "source": "./",
-      "description": "Osobni agenci zakładają kolejne kapelusze, moderator pyta Cię o zdanie i kończy rekomendacją z następnymi krokami.",
-      "version": "0.1.0"
+      "description": "Moderator w niebieskim kapeluszu prowadzi Cię pytaniami, prowadzi naradę zespołu (także głosem) albo zleca analizę kapeluszom. Po każdej rundzie pokazuje tablicę: co mamy, czego brakuje, jaki kierunek.",
+      "version": "0.2.0"
     }
   ]
 }

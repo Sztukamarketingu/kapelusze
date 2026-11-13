@@ -19,12 +19,22 @@ Gdy firma ma już własny sposób podejmowania danej decyzji (progi, wzór, regu
 - **Opis problemu od człowieka:** co się dzieje, czego chce, do kiedy potrzebna jest decyzja. Emocje w opisie są w porządku, bo moderator z nich korzysta.
 - **Pliki firmy**, jeśli człowiek je ma: strategia (gdzie gramy, czego nie robimy), cele, liczby firmy, opis klientów, historia prób i testów. Brak plików nie blokuje analizy: biały wypisuje, czego brakuje, a rekomendacja jest wtedy oznaczona jako wstępna.
 
-## Wybór trybu
+## Wybór trybu pracy
 
-| Tryb | Kiedy | Jak działa | Ile odpowiedzi |
+Tryb wybiera człowiek na starcie. Sekwencje kapeluszy, limity i pułapki są wspólne dla wszystkich trybów.
+
+| Tryb | Kiedy | Kto myśli | Co widać |
 |---|---|---|---|
-| **Szybki** | Decyzja mała, odwracalna, w jednej dziedzinie. Także każda decyzja w czacie, gdzie nie ma osobnych agentów, albo na prośbę człowieka | Jeden agent przechodzi po kolei przez kapelusze z sekwencji, za każdym razem zakładając kolejną kartę. Na ekranie przed pauzą: każdy krok jednym zdaniem, krótka mapa i pytanie o czerwony człowieka | 1 wiadomość do pauzy, do ok. 400 słów |
-| **Sześć kapeluszy** | Decyzja średnia albo sporna | Osobny agent na każdy kapelusz i moderator. Każdy widzi mapę z wcześniejszych kroków | 5–8 |
+| **Prowadzony** | Człowiek chce sam przemyśleć decyzję i zrozumieć, skąd bierze się wynik | Człowiek. Moderator pyta pod każdym kapeluszem, przenosi punkty pod właściwy kolor i dopisuje swoje dopiero po nim | Po każdej rundzie tablica: kapelusze, braki, kierunek, następny krok |
+| **Narada** | Decyzję podejmuje zespół na spotkaniu, także z telefonem na stole w trybie głosowym | Zespół. Moderator ogłasza kapelusze, zapisuje i pilnuje kierunku | W trakcie krótkie zdania, po spotkaniu podsumowanie na piśmie z tablicą |
+| **Auto** | Człowiek chce dostać gotową analizę do oceny | Kapelusze | Tablica i pytanie w pauzie (można dopytać albo dodać), potem zamknięcie z tablicą końcową |
+
+W trybie auto są dwa sposoby wykonania:
+
+| Sposób | Kiedy | Jak działa | Ile odpowiedzi |
+|---|---|---|---|
+| **Szybko** | Decyzja mała, odwracalna, w jednej dziedzinie. Także każda decyzja w czacie, gdzie nie ma osobnych agentów, albo na prośbę człowieka | Jeden agent przechodzi po kolei przez kapelusze z sekwencji, za każdym razem zakładając kolejną kartę. Na ekranie przed pauzą: każdy krok jednym zdaniem, tablica i pytanie o czerwony człowieka | 1 wiadomość do pauzy, do ok. 400 słów |
+| **Z agentami** | Decyzja średnia albo sporna | Osobny agent na każdy kapelusz i moderator. Każdy widzi mapę z wcześniejszych kroków | 5–8 |
 
 ## Wybór sekwencji
 
@@ -38,9 +48,11 @@ Każda sekwencja zaczyna się i kończy niebieskim. Zadania kapeluszy w nawiasac
 | **Zdarzenie, które już się stało** | 🔵 → ⚪ → 🔴 → 🟡 (okazje) → ⚫ → 🟢 (okazja) → 🔵 | Obok strat szukasz okazji |
 | **Kontrola gotowego planu** | 🔵 → ⚫ (projektowanie) → 🟡 (wzmocnienie) → 🟢 (omijanie przeszkód, jeśli trzeba) → 🔵 | Gdy decyzja „idziemy” już zapadła |
 
-## Krok po kroku
+## Krok po kroku (tryb auto)
 
-1. **Człowiek podaje problem.** Wystarczy zdanie albo dwa. Przykład: „Przeanalizuj kapeluszami: czy wprowadzić abonament na obsługę social mediów zamiast rozliczeń za projekt”. Może też od razu wskazać tryb.
+Przebieg trybu prowadzonego i narady jest w `tryby/prowadzony.md` i `tryby/narada.md`. Kolejność kapeluszy, reguły i pułapki z tego pliku obowiązują także tam.
+
+1. **Człowiek podaje problem.** Wystarczy zdanie albo dwa. Przykład: „Przeanalizuj kapeluszami: czy wprowadzić abonament na obsługę social mediów zamiast rozliczeń za projekt”. Może też od razu wskazać tryb pracy.
 2. **🔵 Otwarcie.** Moderator pisze według karty: skupienie, 2–3 definicje problemu, oczekiwany wynik, dane, tryb i program. Przy decyzji średniej lub dużej **pokazuje program człowiekowi i czeka na „ok”** albo poprawkę. Przy małej od razu idzie dalej.
 3. **Kapelusze po kolei.** Każdy agent dostaje:
    - skupienie i definicję problemu z otwarcia,
@@ -65,12 +77,13 @@ Każda sekwencja zaczyna się i kończy niebieskim. Zadania kapeluszy w nawiasac
    - rekomendacja w 3 aktach, pewność i brakujące dane,
    - następne kroki (osoby i terminy z danych człowieka albo „do ustalenia”) i najtańszy test,
    - plon, zawsze i krótko.
-7. **Zapis.** W Claude Code i Cowork pełna analiza trafia do pliku `analizy/RRRR-MM-DD – <temat>.md`: decyzja, najtańszy test i plon zielonego, czyli pomysły nieocenione, kierunki i półgotowe pomysły. Tak samo w trybie szybkim. W czacie pełne odpowiedzi kapeluszy pokazujesz na życzenie, a plon jest w zamknięciu.
+7. **Zapis.** W Claude Code i Cowork pełna analiza trafia do pliku `analizy/RRRR-MM-DD – <temat>.md`: decyzja, najtańszy test i plon zielonego, czyli pomysły nieocenione, kierunki i półgotowe pomysły. Tak samo przy pracy szybkiej. Obok zapisujesz tablicę jako plik HTML. W czacie pełne odpowiedzi kapeluszy pokazujesz na życzenie, a plon jest w zamknięciu.
 
 ## Reguły i progi
 
 - **Najwyżej 3 opcje do pełnej oceny** (żółty + czarny dla każdej). Resztę zapisujesz w plonie.
-- **Biały jako podprogram:** gdy w trakcie brakuje danych, wolno wrócić do białego, ale tylko po konkretną brakującą liczbę.
+- **Biały jako podprogram:** gdy w trakcie brakuje danych, wolno wrócić do białego, ale tylko po konkretną brakującą liczbę. Gdy tę liczbę da się znaleźć na zewnątrz (ceny konkurencji, opinie, popyt), moderator proponuje research, robi go po zgodzie człowieka i dopisuje wnioski pod biały ze źródłem.
+- **Tablica po każdej rundzie** w trybie prowadzonym, w pauzie i na końcu w auto, w podsumowaniu narady (`tablica.md`).
 - **Brak kluczowych danych** oznacza, że rekomendacja jest wstępna i najbliższym krokiem jest zdobycie tych danych.
 - **Czerwony agentów** to kilka linijek, a nie osobny raport.
 - **Dla ludzi na spotkaniu:** ok. 1 minuta na osobę na kapelusz (4 osoby to 4 minuty), czerwony to 1 minuta dla wszystkich. Przy zielonym, żółtym i czarnym najpierw 1–2 minuty na własne notatki.
@@ -91,10 +104,10 @@ Każda sekwencja zaczyna się i kończy niebieskim. Zadania kapeluszy w nawiasac
 
 Wynik to otwarcie i zamknięcie w formacie z karty niebieskiego, a pomiędzy nimi praca kapeluszy w formatach z ich kart.
 
-**Co człowiek widzi** (w obu trybach):
+**Co człowiek widzi** (tryb auto, oba sposoby wykonania):
 1. Otwarcie w 3 liniach (skupienie, tryb, program). Przy decyzji średniej lub dużej z pytaniem o „ok”.
-2. Przed pauzą: każdy krok kapelusza jednym zdaniem („Zakładam biały → 8 faktów, 3 luki.”), krótka mapa (tabela, wiersz na kapelusz, 1–3 punkty) i pytanie o czerwony człowieka w trzech częściach. Razem do ok. 400 słów.
-3. Po pauzie zamknięcie: rekomendacja w 3 aktach, pewność, brakujące dane, następne kroki, najtańszy test i plon.
+2. Przed pauzą: każdy krok kapelusza jednym zdaniem („Zakładam biały → 8 faktów, 3 luki.”), tablica i pytanie o czerwony człowieka w trzech częściach. Tekst do ok. 400 słów. Człowiek może w tym miejscu coś dopytać albo dodać.
+3. Po pauzie zamknięcie: tablica, rekomendacja w 3 aktach, pewność, brakujące dane, następne kroki, najtańszy test i plon.
 
 Pełne odpowiedzi kapeluszy zapisujesz w pliku analizy (Claude Code, Cowork) albo pokazujesz na życzenie (czat).
 

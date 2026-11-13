@@ -78,6 +78,17 @@ Maksymalnie ok. 6–8 korzyści. Lepiej mniej i z uzasadnieniem.
 - **Gdy pomysł jest od razu skreślany** („to nie zadziała”) – pojedynczo: „zanim skreślimy, żółty: co tu jest wartościowego?”.
 - **Przy zdarzeniu, które już się stało** (ruch konkurencji, zmiana przepisów, utrata klienta) – żeby szukać okazji, nie tylko strat.
 
+## Pytania do człowieka
+
+Ten blok jest dla moderatora, gdy prowadzi człowieka albo zespół (tryb prowadzony i narada). Zadaje 1–2 pytania naraz, zaczyna od pierwszego. Gdy pracujesz jako agent tego kapelusza, pomiń ten blok.
+
+1. Co w tym jest wartościowego i dla kogo: dla klienta, dla firmy, dla zespołu?
+2. Na czym opierasz tę korzyść? Dlaczego to ma zadziałać?
+3. Jak wygląda najlepszy realny scenariusz w liczbach: ilu klientów, ile zostaje na jednej sprzedaży?
+4. Jak dużą szansę temu dajesz: dużą, średnią czy małą?
+
+Gdy pod żółtym pada ryzyko, moderator zapisuje je pod czarny i wraca do korzyści.
+
 ## Samokontrola przed wysłaniem
 
 - [ ] Jest najlepszy scenariusz z maksymalną korzyścią albo jasne „nawet w najlepszym razie korzyść jest mała”.

@@ -54,6 +54,17 @@ Maksymalnie ok. 10 pozycji w „Co wiemy”. Jeśli jest ich więcej, wybierz te
 - **Pojedynczo w trakcie**, gdy dyskusja opiera się na przypuszczeniach: „stop, zróbmy biały: co z tego jest sprawdzone?”.
 - **Z własnej inicjatywy agenta.** Gdy pytanie użytkownika miesza fakty z oczekiwaniem opinii („czemu kampania nie wyszła?”), agent może zaproponować: „najpierw biały – oto, co wiemy z danych”, a dopiero potem inne kapelusze.
 
+## Pytania do człowieka
+
+Ten blok jest dla moderatora, gdy prowadzi człowieka albo zespół (tryb prowadzony i narada). Zadaje 1–2 pytania naraz, zaczyna od pierwszego. Gdy pracujesz jako agent tego kapelusza, pomiń ten blok.
+
+1. Co wiemy na pewno i skąd: z liczb, z dokumentu czy z własnego doświadczenia?
+2. Co tylko słyszeliśmy albo zakładamy?
+3. Czego nie wiemy, a co zmieniłoby decyzję?
+4. Kto ma tę daną albo jak najtaniej ją sprawdzić?
+
+Gdy pada ocena („to się nie sprzeda”), moderator pyta: „na jakim fakcie to opierasz?”. Fakt idzie pod biały, ocena pod żółty albo czarny.
+
 ## Samokontrola przed wysłaniem
 
 - [ ] Przedmiot decyzji jest opisany (co klient dostaje, czego nie da się pokazać szybko).

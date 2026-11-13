@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tablica kapeluszy</title>
+<!--
+  Szablon tablicy dodatku Kapelusze. Podmieniasz WYŁĄCZNIE treść bloku <script id="dane"> poniżej.
+  Stylów i skryptu nie zmieniasz. Opis pól: tablica.md.
+-->
+<script id="dane" type="application/json">
+{
+  "temat": "Czy od lutego otworzyć grupy online na żywo dla dorosłych",
+  "runda": 1,
+  "data": "2026-11-11",
+  "tryb": "prowadzony",
+  "program": [
+    {"k": "niebieski", "stan": "zrobione"},
+    {"k": "bialy", "stan": "zrobione"},
+    {"k": "zolty", "stan": "zrobione"},
+    {"k": "czarny", "stan": "zrobione"},
+    {"k": "zielony", "stan": "zrobione"},
+    {"k": "czerwony", "stan": "teraz"},
+    {"k": "niebieski", "stan": "przed"}
+  ],
+  "opcje": ["A. Jedna grupa pilotażowa", "B. Wieczory z Piotrem", "C. Zajęcia hybrydowe"],
+  "kapelusze": [
+    {"k": "bialy", "pola": [
+      {"stan": "slabe", "punkty": [
+        {"t": "Ok. 90 kursantów, 2 sale, grupy do 8 osób", "zr": "ty"},
+        {"t": "Ok. 3 zapytania miesięcznie o zajęcia online", "zr": "ty"},
+        {"t": "Nie wiemy, ilu dorosłych zapisze się na cały semestr", "zr": "ai"}
+      ]}
+    ]},
+    {"k": "zolty", "pola": [
+      {"stan": "pelne", "punkty": [{"t": "Mały koszt startu, wynik znamy przed lutym", "zr": "ty"}]},
+      {"stan": "pelne", "punkty": [{"t": "Dwie grupy po 6 osób bez trzeciej sali", "zr": "ty"}]},
+      {"stan": "slabe", "punkty": [{"t": "Kursant po przeprowadzce zostaje w swojej grupie", "zr": "ai"}]}
+    ]},
+    {"k": "czarny", "pola": [
+      {"stan": "pelne", "punkty": [{"t": "3 zapytania miesięcznie mogą nie złożyć grupy", "zr": "ty"}]},
+      {"stan": "pelne", "punkty": [{"t": "Nie wiadomo, czy Piotr ma wolne wieczory", "zr": "ty"}]},
+      {"stan": "puste", "punkty": []}
+    ]},
+    {"k": "zielony", "pola": [
+      {"stan": "pelne", "punkty": [{"t": "Nazwa „rozmowa na żywo” zamiast „kurs online”", "zr": "ty"}]},
+      {"stan": "puste", "punkty": []},
+      {"stan": "puste", "punkty": []}
+    ]},
+    {"k": "czerwony", "pola": [
+      {"stan": "puste", "punkty": []},
+      {"stan": "puste", "punkty": []},
+      {"stan": "puste", "punkty": []}
+    ]}
+  ],
+  "braki": {
+    "odCiebie": ["Ile kontaktów jest na liście zapytań", "Kto może uczyć wieczorem i w który dzień", "Od ilu osób grupa ma sens"],
+    "doSprawdzenia": ["Ile kosztują zajęcia online na żywo w innych szkołach językowych"]
+  },
+  "kierunek": {
+    "tekst": "Na dziś najwięcej przemawia za opcją A: najmniej kosztuje i daje odpowiedź przed lutym.",
+    "podwaza": "Jeśli na liście zapytań jest mniej niż 5 kontaktów, grupa się nie złoży."
+  },
+  "decyzje": ["Do pełnej oceny wybrane trzy opcje: A, B i C", "Nazwa zajęć: „rozmowa na żywo”"],
+  "nastepny": "Twój czerwony kapelusz: jak się czujesz z opcją A, B i C?",
+  "plon": ["Konwersacje online dla absolwentów", "Grupy online z niemieckiego"]
+}
+</script>
+<style>
+:root{
+  --tlo:#faf7f2; --pow:#ffffff; --tekst:#1a1917; --cichy:#6b655c; --linia:#e4ded3; --akcent:#c96442; --krem:#f6f1ea;
+  --bialy:#ffffff; --bialy-obw:#9a948a; --czarny-obw:#1a1917; --czerwony:#d6453d; --zolty:#f1c232; --czarny:#1a1917; --zielony:#4a9b5c; --niebieski:#3c6fb4;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --tlo:#191816; --pow:#232220; --tekst:#f0ece4; --cichy:#a39c90; --linia:#3a3733; --akcent:#e08a6b; --krem:#2a2825;
+    --bialy:#f4f1ea; --bialy-obw:#f4f1ea; --czarny:#0c0c0b; --czarny-obw:#8a8378;
+  }
+}
+:root[data-theme="dark"]{
+  --tlo:#191816; --pow:#232220; --tekst:#f0ece4; --cichy:#a39c90; --linia:#3a3733; --akcent:#e08a6b; --krem:#2a2825;
+  --bialy:#f4f1ea; --bialy-obw:#f4f1ea; --czarny:#0c0c0b; --czarny-obw:#8a8378;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--tlo);color:var(--tekst);font-family:-apple-system,"Inter","Helvetica Neue",Arial,sans-serif;font-size:15px;line-height:1.45}
+main{max-width:1080px;margin:0 auto;padding:24px 16px 40px}
+.nad{color:var(--akcent);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:12px}
+h1{font-size:24px;line-height:1.25;margin:6px 0 4px}
+.meta{color:var(--cichy);font-size:13px;margin:0 0 18px}
+h2{font-size:15px;margin:0 0 8px}
+.program{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:0;list-style:none}
+.program li{display:flex;align-items:center;gap:6px;padding:5px 10px;border:1px solid var(--linia);border-radius:999px;background:var(--pow);font-size:13px;color:var(--cichy)}
+.program li.zrobione{color:var(--tekst)}
+.program li.pominiete{border-style:dashed;text-decoration:line-through}
+.program li.teraz{border-color:var(--akcent);color:var(--tekst);font-weight:700;box-shadow:0 0 0 2px color-mix(in srgb,var(--akcent) 25%,transparent)}
+.kropka{display:inline-block;width:12px;height:12px;border-radius:50%;border:1px solid var(--bialy-obw);flex:none}
+.k-bialy{background:var(--bialy)} .k-czerwony{background:var(--czerwony);border-color:var(--czerwony)}
+.k-zolty{background:var(--zolty);border-color:var(--zolty)} .k-czarny{background:var(--czarny);border-color:var(--cichy)}
+.k-zielony{background:var(--zielony);border-color:var(--zielony)} .k-niebieski{background:var(--niebieski);border-color:var(--niebieski)}
+.siatka{display:grid;gap:8px;margin-bottom:22px}
+.nagl{font-weight:700;font-size:13px;padding:4px 10px;color:var(--cichy)}
+.etyk{display:flex;align-items:flex-start;gap:8px;font-weight:700;padding:10px 4px}
+.pole{background:var(--pow);border:1px solid var(--linia);border-left:5px solid var(--obw,var(--linia));border-radius:8px;padding:10px 12px;min-height:56px}
+.pole.puste{background:transparent;border-style:dashed;border-left-style:solid;color:var(--cichy);font-style:italic}
+.pole ul{margin:0;padding-left:18px}
+.pole li{margin-bottom:4px}
+.stan{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--cichy);margin-bottom:4px;font-style:normal}
+.stan.slabe{color:var(--akcent)}
+.zr{display:inline-block;font-size:10.5px;padding:0 6px;border-radius:999px;border:1px solid var(--linia);color:var(--cichy);margin-left:6px;white-space:nowrap;vertical-align:1px}
+.opcja-mob{display:none;font-size:12px;font-weight:700;color:var(--cichy);margin-bottom:4px}
+.dol{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ramka{background:var(--krem);border-left:3px solid var(--akcent);border-radius:6px;padding:12px 14px}
+.ramka ul{margin:0 0 8px;padding-left:18px}
+.ramka h3{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--cichy);margin:8px 0 4px}
+.ramka h3:first-of-type{margin-top:0}
+.ramka p{margin:0 0 6px}
+.krok{grid-column:1/-1;border-left-color:var(--niebieski)}
+.plon{grid-column:1/-1;background:transparent;border:1px dashed var(--linia);border-left:3px solid var(--zielony)}
+.stopka{margin-top:22px;color:var(--cichy);font-size:12px}
+@media (max-width:680px){
+  .siatka{grid-template-columns:1fr !important}
+  .siatka > *{grid-column:auto !important;min-width:0}
+  .nagl{display:none}
+  .etyk{padding:12px 0 0}
+  .opcja-mob{display:block}
+  .dol{grid-template-columns:1fr}
+  h1{font-size:20px}
+}
+@media print{body{background:#fff}.pole,.ramka{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+  <div class="nad" id="nad"></div>
+  <h1 id="temat"></h1>
+  <p class="meta" id="meta"></p>
+  <h2>Gdzie jesteśmy</h2>
+  <ol class="program" id="program"></ol>
+  <h2 id="tyt-siatki"></h2>
+  <div class="siatka" id="siatka"></div>
+  <div class="dol" id="dol"></div>
+  <p class="stopka">Dodatek Kapelusze · Sztuka Marketingu · legenda: Ty / zespół – punkt od ludzi, agent albo nazwa roli – punkt agenta, AI – dopisek moderatora, research – sprawdzone na zewnątrz</p>
+</main>
+<script>
+(function(){
+  var NAZWY={bialy:"Biały",czerwony:"Czerwony",zolty:"Żółty",czarny:"Czarny",zielony:"Zielony",niebieski:"Niebieski"};
+  var OPIS={bialy:"fakty i luki",czerwony:"odczucia",zolty:"korzyści",czarny:"ryzyka",zielony:"nowe pomysły",niebieski:"program"};
+  var STAN={pelne:"pełne",slabe:"słabe – do uzupełnienia",puste:"puste"};
+  var ZR={ty:"Ty",zespol:"zespół",ai:"AI",agent:"agent",research:"research"};
+  var KOLOR={bialy:"var(--bialy-obw)",czerwony:"var(--czerwony)",zolty:"var(--zolty)",czarny:"var(--czarny-obw)",zielony:"var(--zielony)",niebieski:"var(--niebieski)"};
+  function el(tag,klasa,tekst){var e=document.createElement(tag);if(klasa)e.className=klasa;if(tekst!=null)e.textContent=tekst;return e;}
+  function kropka(k){return el("span","kropka k-"+k);}
+  var d;
+  try{d=JSON.parse(document.getElementById("dane").textContent);}
+  catch(e){document.getElementById("temat").textContent="Błąd w danych tablicy: "+e.message;return;}
+  var opcje=(d.opcje&&d.opcje.length)?d.opcje:[""];
+  document.title="Tablica · "+(d.temat||"");
+  document.getElementById("nad").textContent="Kapelusze · tablica po rundzie "+(d.runda||1);
+  document.getElementById("temat").textContent=d.temat||"";
+  document.getElementById("meta").textContent=[d.data,d.tryb?"tryb "+d.tryb:null].filter(Boolean).join(" · ");
+  var prog=document.getElementById("program");
+  (d.program||[]).forEach(function(p){
+    var li=el("li",p.stan||"przed");
+    li.appendChild(kropka(p.k));
+    li.appendChild(document.createTextNode((NAZWY[p.k]||p.k)+(p.stan==="zrobione"?" ✓":p.stan==="teraz"?" ← teraz":p.stan==="pominiete"?" – pominięty":"")));
+    prog.appendChild(li);
+  });
+  document.getElementById("tyt-siatki").textContent=opcje.length>1?"Opcje w sześciu kapeluszach":"Pomysł w sześciu kapeluszach";
+  var s=document.getElementById("siatka");
+  s.style.gridTemplateColumns="9.5rem repeat("+opcje.length+", minmax(0,1fr))";
+  if(opcje.length>1){
+    s.appendChild(el("div","nagl",""));
+    opcje.forEach(function(o){s.appendChild(el("div","nagl",o));});
+  }
+  (d.kapelusze||[]).forEach(function(w){
+    var et=el("div","etyk");
+    et.appendChild(kropka(w.k));
+    var n=el("span",null,NAZWY[w.k]||w.k);
+    var op=el("span",null," · "+(OPIS[w.k]||""));op.style.fontWeight="400";op.style.color="var(--cichy)";
+    n.appendChild(op);et.appendChild(n);s.appendChild(et);
+    if(w.ogolne&&w.ogolne.length&&opcje.length>1){
+      var g=el("div","pole");g.style.setProperty("--obw",KOLOR[w.k]||"var(--linia)");g.style.gridColumn="span "+opcje.length;
+      g.appendChild(el("span","opcja-mob","Ogólnie"));g.appendChild(el("span","stan","ogólnie, przed wyborem opcji"));
+      var gu=el("ul");w.ogolne.forEach(function(x){var li=el("li",null,x.t);if(x.zr)li.appendChild(el("span","zr",ZR[x.zr]||x.zr));gu.appendChild(li);});
+      g.appendChild(gu);s.appendChild(g);s.appendChild(el("div","etyk",""));
+    }
+    var pola=w.pola||[];
+    var wspolne=pola.length===1&&opcje.length>1;
+    pola.forEach(function(p,i){
+      var st=p.stan||((p.punkty&&p.punkty.length)?"pelne":"puste");
+      var c=el("div","pole"+(st==="puste"?" puste":""));
+      c.style.setProperty("--obw",KOLOR[w.k]||"var(--linia)");
+      if(wspolne)c.style.gridColumn="span "+opcje.length;
+      if(opcje.length>1)c.appendChild(el("span","opcja-mob",wspolne?"Wszystkie opcje":opcje[i]));
+      c.appendChild(el("span","stan "+st,STAN[st]||st));
+      if(st==="puste"&&!(p.punkty&&p.punkty.length)){c.appendChild(document.createTextNode("Tego kapelusza jeszcze tu nie było."));}
+      else{
+        var ul=el("ul");
+        (p.punkty||[]).forEach(function(x){
+          var li=el("li",null,x.t);
+          if(x.zr)li.appendChild(el("span","zr",ZR[x.zr]||x.zr));
+          ul.appendChild(li);
+        });
+        c.appendChild(ul);
+      }
+      s.appendChild(c);
+    });
+  });
+  var dol=document.getElementById("dol");
+  function lista(arr){var ul=el("ul");arr.forEach(function(t){ul.appendChild(el("li",null,t));});return ul;}
+  var b=d.braki||{};
+  var r1=el("div","ramka");r1.appendChild(el("h2",null,"Czego brakuje"));
+  var jest=false;
+  if(b.odCiebie&&b.odCiebie.length){r1.appendChild(el("h3",null,"Dane od Ciebie"));r1.appendChild(lista(b.odCiebie));jest=true;}
+  if(b.doSprawdzenia&&b.doSprawdzenia.length){r1.appendChild(el("h3",null,"Do sprawdzenia (research)"));r1.appendChild(lista(b.doSprawdzenia));jest=true;}
+  if(!jest)r1.appendChild(el("p",null,"Na tym etapie niczego nie brakuje."));
+  dol.appendChild(r1);
+  var r2=el("div","ramka");r2.appendChild(el("h2",null,"Kierunek"));
+  if(d.kierunek&&d.kierunek.tekst){
+    r2.appendChild(el("h3",null,"Propozycja systemu, decyzja jest Twoja"));
+    r2.appendChild(el("p",null,d.kierunek.tekst));
+    if(d.kierunek.podwaza){r2.appendChild(el("h3",null,"Co ją podważa"));r2.appendChild(el("p",null,d.kierunek.podwaza));}
+  }else{r2.appendChild(el("p",null,"Za wcześnie na kierunek. Najpierw uzupełnijmy puste pola i braki."));}
+  dol.appendChild(r2);
+  if(d.decyzje&&d.decyzje.length){var r5=el("div","ramka krok");r5.appendChild(el("h2",null,"Decyzje do tej pory"));r5.appendChild(lista(d.decyzje));dol.appendChild(r5);}
+  if(d.nastepny){var r3=el("div","ramka krok");r3.appendChild(el("h2",null,"Następny krok"));r3.appendChild(el("p",null,d.nastepny));dol.appendChild(r3);}
+  if(d.sporne&&d.sporne.length){var r6=el("div","ramka plon");r6.style.borderLeftColor="var(--czerwony)";r6.appendChild(el("h2",null,"Sporne: oba zdania"));r6.appendChild(lista(d.sporne));dol.appendChild(r6);}
+  if(d.plon&&d.plon.length){var r4=el("div","ramka plon");r4.appendChild(el("h2",null,"Plon: pomysły odłożone"));r4.appendChild(lista(d.plon));dol.appendChild(r4);}
+})();
+</script>
+</body>
+</html>
